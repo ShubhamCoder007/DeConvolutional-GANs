@@ -14,10 +14,7 @@ while True:
 	if frame_no == 200:
 		break
 		
-	if frame_no % 10 == 8 or frame_no % 10 == 9:
-		cv2.imwrite('dataset/' + roll + '/test_set/'+str(frame_no)+'.jpg', frame)
-	else:
-		cv2.imwrite('dataset/' + roll + '/training_set/'+str(frame_no)+'.jpg', frame)
+	cv2.imwrite('dataset/' + roll + '/train_set/'+str(frame_no)+'.jpg', frame)
 	
 	frame_no = frame_no + 1
 
